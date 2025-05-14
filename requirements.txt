@@ -3,7 +3,6 @@ click==8.1.8
 colorama==0.4.6
 coverage==7.8.0
 diff_cover==9.2.4
--e git+https://github.com/SamihaSyeda/clash-royale-etl-project.git@78fbf7bc6d31418199f17610a94d745d330b6c8c#egg=etl_example
 findspark==2.0.1
 flake8==7.2.0
 greenlet==3.2.2

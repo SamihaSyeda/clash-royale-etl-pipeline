@@ -1,6 +1,4 @@
-# import required modules
-import os
-
+# Read in CSV file using spark
 def extract_data(spark, filepath):
     """Takes a filepath to a CSV file, with a header and returns a pyspark DataFrame of that data."""
     try:
