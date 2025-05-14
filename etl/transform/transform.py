@@ -1,6 +1,6 @@
 from pyspark.sql.functions import udf, round
 from pyspark.sql.types import StringType, DateType, IntegerType, FloatType
-from etl.transform.enrich import enrich_data
+from enrich import enrich_data
 
 
 # Cleans and Transforms the data, returns the cleaned and transformed dataframe
