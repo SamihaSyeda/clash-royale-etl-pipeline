@@ -1,8 +1,6 @@
 from pyspark.sql.functions import udf, round
 from pyspark.sql.types import StringType, DateType, IntegerType, FloatType
 from enrich import enrich_data
-import os
-from etl.load.load import save_csv
 
 # Cleans and Transforms the data and returns the cleaned and transformed dataframe
 def clean_transform_data(df):
@@ -30,12 +28,6 @@ def clean_transform_data(df):
     cleaned_df = set_types(cleaned_df)
     
     enriched_df = enrich_data(cleaned_df)
-    
-    FILE_PATH_ENRICHED = os.path.join(
-        os.path.dirname(__file__), "../data/processed/enriched_data.csv"
-        )
-    
-    save_csv(enriched_df, FILE_PATH_ENRICHED)
     
     return enriched_df
 
