@@ -3,6 +3,7 @@ import sys
 from config.env_config import setup_env
 from spark_setup import setup_spark
 from etl.extract.extract import extract_data
+from etl.transform.transform import clean_transform_data
 
 def main():
     # Run environment setup
@@ -20,6 +21,8 @@ def main():
     df = extract_data(spark, FILE_PATH_BATTLES)
     
     print("Data extraction complete.")
+    
+    enriched_df = clean_transform_data(df)
     
     print(
         f"ETL pipeline run successfully in "
