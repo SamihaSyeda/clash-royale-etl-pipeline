@@ -18,3 +18,5 @@ Due to the size of the dataset, I was unable to upload it to github. The dataset
 There is a kaggle API but it seems that if the connection is disrupted, the download would need to be restarted and for a large file, this is a hassle. Nevertheless, for the sake of automation, the kaggle API would be a good thing to implement in the pipeline in future, as part of the extract process, so the pipeline is fully automated with no need for a human to manually download the dataset.
 
 I could also upload the dataset to a database like Postgres and extract the data from there via the pipeline.
+
+## Function and Flow of ETL Planning Flowchart here: [Lucid Chart](https://lucid.app/lucidchart/42f58c41-dad1-47f1-a884-5855c2e8cbb8/edit?viewport_loc=41%2C-359%2C3068%2C1341%2C0_0&invitationId=inv_a1117dca-caff-43d5-a694-9fbec5e866b9)
