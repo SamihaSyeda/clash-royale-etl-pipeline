@@ -131,7 +131,8 @@ With this data, the following can also possibly be answered:
 - Which cards are always with a specific win-con?
 
 
-## Function and Flow of ETL Planning Flowchart here: [Lucid Chart](https://lucid.app/lucidchart/42f58c41-dad1-47f1-a884-5855c2e8cbb8/edit?viewport_loc=41%2C-359%2C3068%2C1341%2C0_0&invitationId=inv_a1117dca-caff-43d5-a694-9fbec5e866b9)
+## Function and Flow of ETL Planning Flowchart:
+Found at [Lucid Chart](https://lucid.app/lucidchart/42f58c41-dad1-47f1-a884-5855c2e8cbb8/edit?viewport_loc=41%2C-359%2C3068%2C1341%2C0_0&invitationId=inv_a1117dca-caff-43d5-a694-9fbec5e866b9)
 
 ## Extracting the Data
 Below are the planned cleaning and transformation steps for the data.
@@ -177,4 +178,7 @@ Rename all columns to replace the "." in them with "_" which is better practice.
 ## Improvements and Ideas for the Future:
 
 1. I planned to  obtain card images and display them in streamlit if I had enough time to do so. I would have done this by webscraping from this [page] (https://www.deckshop.pro/card/list)
-2. 
+2. All tests should have been unit tested to test individual functionality, component tested to check how the components interact and then integration tested to check whether functions integrated with each other as expected.
+3. ETL pipeline is a decent speed but the streamlit app and visualisations take a long time to load because dealing with millions of data, even if using pyspark.
+4. To track the speeds of these I could have set up a logger that records the time it takes for these functions to run and also to log whether functions are throwing errors.
+5. 
