@@ -50,7 +50,7 @@ As a player, I want to know what the top 10 most used win conditions were so I c
 - [ ] Gather the card counts for each card_id, go through every card_id in card_id csv and count how many of them in each arena (across different card_number columns)
 - [ ] Filter the counts for only win-cons
 - [ ] Store the names of the top 10 win-cons
-- [ ] Streamlit bar chart for usage counts of top 10 cards with filtering by league
+- [ ] Streamlit bar chart for usage counts of top 10 most used win conditions with filtering by league
 - [ ] All functions are unit tested and pass the tests
 
 ## Useful Analysis To-Be Completed in Near Future: (User Stories 4 and 5)
@@ -65,12 +65,9 @@ As a player, I want to know what the top 10 most used win conditions were so I c
 - [ ] Take all the battles and group them into different leagues: Challenger, Master, Champion, Grand Champion, Royal Champion, Ultimate Champion
 - [ ] Join the loser tags column vertically with the winner tags column to get all the player tags in one column
 - [ ] Filter the player tags for unique tags using distinct()
-- [ ] 
-- [ ] Streamlit bar chart for usage counts of top 10 cards with filtering by league
+- [ ] Count the distinct number of players.
+- [ ] Streamlit metric for number of players, filtered by league.
 - [ ] All functions are unit tested and pass the tests
-
-
-7. 
 
 ## User Story 7 and 3:
 7. As a Clash Royale Fan I want to know what the total number of crowns won in this season was just because it is a really cool stat. (on a serious note, as a dev, it helps us understand what amount we should set the next community crown challenge to so that it is not too hard for the community to achieve, nor too easy).
