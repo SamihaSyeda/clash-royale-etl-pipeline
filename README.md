@@ -181,4 +181,9 @@ Rename all columns to replace the "." in them with "_" which is better practice.
 2. All tests should have been unit tested to test individual functionality, component tested to check how the components interact and then integration tested to check whether functions integrated with each other as expected.
 3. ETL pipeline is a decent speed but the streamlit app and visualisations take a long time to load because dealing with millions of data, even if using pyspark.
 4. To track the speeds of these I could have set up a logger that records the time it takes for these functions to run and also to log whether functions are throwing errors.
-5. 
+5. Making use of AWS Services for performance optimisation and scalability:
+  - The raw data and the data post-processing can be stored in Amazon S3 where it would save the use of local storage, and give availability and scalability.
+  - Elastic MapReduce  (EMR) could be used for PySpark jobs so processing can be distributed across clusters.
+  - The Streamlit app could be deployed on an EC2 instance for better responsiveness and would benefit from auto-scaling if the app gets busy.
+
+
